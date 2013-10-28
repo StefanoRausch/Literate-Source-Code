@@ -16,6 +16,10 @@ The `package.json` file belongs in the root directory of your project, next to t
         }
     }
 
+## Source Code
+
+Have a look at [package.json][], which has been extracted from this LSC file.
+
 Happy literate source coding!
 
 [dependency]: https://npmjs.org/doc/json.html#devDependencies " Specifics of npm's package.json Handling "
@@ -23,3 +27,4 @@ Happy literate source coding!
 [Gruntfile.js]: Gruntfile.js.md
 [Literate Source Code]: https://github.com/StefanoRausch/Literate-Source-Code " Stefano F. Rausch "
 [npm]: https://npmjs.org " Node Packaged Modules "
+[package.json]: package.json
