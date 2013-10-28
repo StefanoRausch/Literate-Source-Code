@@ -1,0 +1,9 @@
+{
+    "name": "Literate-Source-Code",
+    "description": "Write and Code.",
+    "version": "1.0.0",
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-watch": "~0.5.3"
+    }
+}
