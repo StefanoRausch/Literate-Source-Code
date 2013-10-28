@@ -2,24 +2,26 @@
 
 **Explain and Code.**
 
-To document single source code units ( files ) can be a daunting task — at least it has been for me. On the one hand there are well established ( strict ) standards following for example the DocBlock Guidelines [^DocBlock] and on the other side of the spectrum there is no [software documentation][] at all — the latter not being the choice of the day.
+To document single source code units `files` can be a daunting task — at least it has been for me. On the one hand there are well established ( strict ) standards following for example the DocBlock Guidelines, such as [Javadoc Comment][Javadoc], [PHPDoc][PHPDoc] et al., and on the other side of the spectrum there is no [software documentation][] at all — the latter not being the choice of the day.
 
 The question to be answered is what, how ( much ) and to whom exactly a project wants to deliver documentation-wise. Is there possibly a [KISS][] all-encompassing way to satisfactorily address all stakeholders? Maybe ...
 
-LSC [^LSC] might be a good concept to implement. It is flexible enough to mimic — literally to the dot — the strict way as well as to accommodate a very informal and / or minimalistic writing style.
+LSC ( Literate Source Code ) might be a good concept to implement. It is flexible enough to mimic — literally to the dot — the strict way as well as to accommodate a very informal and / or minimalistic writing style.
 
 ## The Concept
 
 Food for thought :
 
-> Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. — Donald E. Knuth [^Donald E. Knuth]
+> Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. — Donald E. Knuth in his article [Literate Programming][] submitted to [The Computer Journal][]
 
 LSC is a spin-off of [Literate Programming][LP] in that respect that it embraces the weave ( documentation ) part of that approach and leaves the tangle ( programming ) aspect to be implemented by the project wanting to use the concept.
 
-Taking the idea of using [Markdown][] for writing documentation — and ease of publishing — to a new level [^inspiration], LCS can be applied to any chosen programming language :
+Taking the idea of using [Markdown][] for writing documentation — and ease of publishing — to a new level, attribution for the inspiration is given to [Literate CoffeeScript][], LCS can be applied to any chosen programming language :
 
-- Documentation starts at the beginning of a line.
-- Code is indented ( at least and per additional level ) with exact 4 spaces and spaces only. [^spaces]
+- **Documentation starts at the beginning of a line**.
+- **Code is indented ( at least and per additional level ) with exact 4 spaces and spaces only**.  
+
+    The reason for this restriction is simple : to be able to use tabulators for adding paragraphs to list items as well as to have code blocks not recognised by the extraction tool.
 
 That's it — apart from the implementation for extracting the source code.
 
@@ -28,11 +30,10 @@ That's it — apart from the implementation for extracting the source code.
 List of contributions :
 
 - Stefano F. Rausch :
-
     1. A simple [Grunt][] [File](implementations/stefano-rausch/Gruntfile.js.md) and the accompanying ( essential ) [package.json](implementations/stefano-rausch/package.json.md) file.
     2. The [Editorial][] [Workflow][LSC Editorial Workflow]!
 
-Pull requests are more than welcome. Every contributor is attributed for and retains the copyright of the implementation PR [^PR] published.
+Pull requests ( PR ) are more than welcome. Every contributor is attributed for and retains the copyright of the implementation PR published.
 
 Happy literate source coding!
 
@@ -49,7 +50,7 @@ Listed ( in no specific order ;) are the applications and technologies I use in 
 - [Jade][] : TJ Holowaychuk, Forbes Lindesay and contributors
 - [Literate][Literate CoffeeScript] [CoffeeScript][] : Jeremy Ashkenas
 - [Markdown][] : John Gruber
-- [MarkdownEditing][] [^ST Plugin] : Brett Terpstra
+- [MarkdownEditing][] a Sublime Text plugin : Brett Terpstra
 - [Marked][] : Brett Terpstra
 - [MultiMarkdown][] :  Fletcher T. Penny
 - [MultiMarkdown Composer][] :  Fletcher T. Penny
@@ -71,14 +72,6 @@ Based on a work at <https://github.com/StefanoRausch/Literate-Source-Code>.
 1.0.0 : 2013-10-28
 
 > Initial commit.
-
-[^DocBlock]: Such as [Javadoc Comment][Javadoc], [PHPDoc][PHPDoc] et al.
-[^Donald E. Knuth]: In his article [Literate Programming][] submitted to [The Computer Journal][].
-[^inspiration]: Attribution for the inspiration is given to [Literate CoffeeScript][].
-[^LSC]: Literate Source Code.
-[^PR]: Pull Request.
-[^spaces]: The reason for this restriction is simple : to be able to use tabulators for adding paragraphs to list items as well as to have code blocks not recognised by the extraction tool.
-[^ST Plugin]: A Sublime Text plugin.
 
 [CodeKit]: http://incident57.com/codekit
 [CoffeeScript]: http://coffeescript.org

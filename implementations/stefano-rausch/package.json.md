@@ -1,6 +1,6 @@
 # package
 
-The `package.json` file belongs in the root directory of your project, next to the `Gruntfile` [^getting started], and should be committed with your project source. It stores metadata for projects published as [npm][] modules. Running `npm install` in the same folder will install the correct version of each [dependency][] listed therein.
+The `package.json` file belongs in the root directory of your project, next to the `Gruntfile` — see <http://gruntjs.com/getting-started>, and should be committed with your project source. It stores metadata for projects published as [npm][] modules. Running `npm install` in the same folder will install the correct version of each [dependency][] listed therein.
 
 > Barebone configuration.
 >
@@ -17,8 +17,6 @@ The `package.json` file belongs in the root directory of your project, next to t
     }
 
 Happy literate source coding!
-
-[^getting started]: See <http://gruntjs.com/getting-started>.
 
 [dependency]: https://npmjs.org/doc/json.html#devDependencies " Specifics of npm's package.json Handling "
 [Gruntfile.coffee]: Gruntfile.coffee.md

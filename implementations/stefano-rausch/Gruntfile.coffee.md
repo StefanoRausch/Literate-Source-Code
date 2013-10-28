@@ -4,8 +4,8 @@ The `Gruntfile` is a valid CoffeeScript file that belongs in the root directory 
 
 > Wrapper function for extracting source code from the documentation file.
 >
-> version : 1.0.0+20131028  
-> license : The MIT License &copy; 2013 Stefano F. Rausch \< stefano@rausch-e.net >  
+> version : 1.0.0+20131028<br>
+> license : The MIT License &copy; 2013 Stefano F. Rausch \< stefano@rausch-e.net ><br>
 > see : [Literate Source Code][] — [Gruntfile.js][] and [package.json][]
 
     module.exports = ->
@@ -16,7 +16,7 @@ The [grunt-contrib-watch][] plugin ensures that the process of filtering out the
             watch :
                 literateCode :
 
-Following the file extension convention suggested by [Literate CoffeeScript][], some of the popular configuration, mark up / pre-processor / scripting languages for web development have been marked as literate by appending `.md` [^MD] to the original file extension. The [Minimal Matching Utility][] directives are used for folder independent watching. Just work with the LSC [^LSC] files as you would do with traditional files.
+Following the file extension convention suggested by [Literate CoffeeScript][], some of the popular configuration, mark up / pre-processor / scripting languages for web development have been marked as literate by appending `.md` ( [Markdown](http://daringfireball.net/projects/markdown ) to the original file extension. The [Minimal Matching Utility][] directives are used for folder independent watching. Just work with the LSC ( Literate Source Code ) files as you would do with traditional files.
 
                     files : [
                         '**/*.haml.md', '**/*.html.md', '**/*.jade.md',
@@ -64,9 +64,6 @@ The final step for Grunt to successfully being able to process the watch task an
 Have a look at [Gruntfile.coffee][], which has been extracted from this LSC file.
 
 Happy literate source coding!
-
-[^LSC]: Literate Source Code
-[^MD]: [Markdown](http://daringfireball.net/projects/markdown " John Gruber ")
 
 [Grunt]: http://gruntjs.com " The JavaScript Task Runner "
 [grunt-contrib-watch]: https://github.com/gruntjs/grunt-contrib-watch " Kyle R. Young "
