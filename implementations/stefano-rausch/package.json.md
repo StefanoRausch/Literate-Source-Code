@@ -8,7 +8,7 @@ The `package.json` file belongs in the root directory of your project, next to t
 
     {
         "name": "Literate-Source-Code",
-        "description": "Write and Code.",
+        "description": "Explain and Code.",
         "version": "1.0.0",
         "devDependencies": {
             "grunt": "~0.4.1",
