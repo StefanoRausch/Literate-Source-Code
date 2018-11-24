@@ -16,7 +16,7 @@ Food for thought :
 
 LSC is a spin-off of [Literate Programming][LP] in that respect that it embraces the weave ( documentation ) part of that approach and leaves the tangle ( programming ) aspect to be implemented by the project wanting to use the concept.
 
-Taking the idea of using [Markdown][] for writing documentation — and ease of publishing — to a new level, attribution for the inspiration is given to [Literate CoffeeScript][], LCS can be applied to any chosen programming language :
+Taking the idea of using [Markdown][] for writing documentation — and ease of publishing — to a new level, attribution for the inspiration is given to [Literate CoffeeScript][], LSC can be applied to any chosen programming language :
 
 - **Documentation starts at the beginning of a line**.
 - **Code is indented ( at least and per additional level ) with exact 4 spaces and spaces only**.  
@@ -68,6 +68,10 @@ Except where explicitly stated otherwise, all documents / documentation and ( fu
 Based on a work at <https://github.com/StefanoRausch/Literate-Source-Code>.
 
 ## Changelog
+
+1.0.1 : 2018-11-24
+
+> Corrected misspelling.
 
 1.0.0 : 2013-10-28
 
